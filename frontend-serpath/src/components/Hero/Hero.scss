@@ -1,0 +1,25 @@
+@import "../../config";
+
+#hero {
+    margin-top: $nav-height;
+    min-height: calc(100vh - $nav-height);
+    background-image: url("../../media/images/hero-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    .hero-heading {
+        text-align: center;
+        color: $red;
+        font-size: 5rem;
+        display: block;
+        margin-top: $nav-height;
+    }
+    .hero-subheading {
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-indent: 0.3rem;
+        font-weight: 100;
+    }
+}
