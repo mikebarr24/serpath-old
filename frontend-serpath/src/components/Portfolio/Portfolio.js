@@ -17,7 +17,7 @@ function Portfolio() {
         <p className='portfolio-text'>Take a look at some of my past &amp; present projects. </p>
         <div className="project-carousel">
           {projects}
-        </div>
+      </div>
     </section>
   )
 }
