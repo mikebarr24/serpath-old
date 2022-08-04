@@ -1,24 +1,12 @@
 import React from "react";
 import "./Nav.scss";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineCloseCircle, AiOutlineGithub, AiOutlineInstagram } from "react-icons/ai";
 
 function Nav() {
   const [nav, setNav] = React.useState(false);
   const navToggle = ()=> {
     setNav(!nav)
   }
-  
-  let closeDisplay;
-  let burgerDisplay;
-  if (nav) {
-    closeDisplay = {
-      display: "block"
-    }
-    burgerDisplay = {
-      display: "none"
-    }
-  }
-
 
 
   return (
@@ -31,13 +19,17 @@ function Nav() {
           <li className="list-item">My Work</li>
           <li className="list-item">Contact</li>
         </ul>
+        <div className="social-icons">
+        <AiOutlineGithub className="icon" />
+        <AiOutlineInstagram className="icon" />
+        </div>
+        <AiOutlineCloseCircle className="nav-close-btn" onClick={navToggle} />
       </div>
-      <div className="burger-btn" style={burgerDisplay} onClick={navToggle}>
+      <div className="burger-btn" onClick={navToggle}>
         <span></span>
         <span></span>
         <span></span>
       </div>
-    <AiOutlineCloseCircle className="nav-close-btn" style={closeDisplay}  onClick={navToggle} />
     </nav>
   );
 }

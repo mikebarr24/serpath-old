@@ -7,11 +7,15 @@
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
   .nav-logo {
     font-size: 4rem;
   }
   .nav-items {
     position: absolute;
+    height: 100vh;
     top: 0;
     bottom: 0;
     left: 0;
@@ -19,6 +23,7 @@
     background-color: $yellow;
     font-size: 4rem;
     display: none;
+    z-index: 1000;
     ul {
       margin: auto;
       list-style: none;
@@ -32,6 +37,27 @@
       display: flex;
       animation: menu-open 0.2s ease-in-out;
       animation-fill-mode: backwards;
+    }
+  }
+  .nav-close-btn {
+    color: $blue;
+    font-size: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.7rem;
+    animation: closeAppear 0.2s ease-in-out 0.2s;
+    animation-fill-mode: backwards;
+  }
+  .social-icons {
+    color: $blue;
+    font-size: 4rem;
+    position: absolute;
+    top:1.5rem;
+    left: 1.5rem;
+    animation: closeAppear 0.2s ease-in-out 0.2s;
+    animation-fill-mode: backwards;
+    .icon {
+      margin-right: 1rem;
     }
   }
   .burger-btn {
@@ -52,15 +78,6 @@
         width: 70%;
       }
     }
-  }
-  .nav-close-btn {
-    font-size: 5rem;
-    position: absolute;
-    top: 1rem;
-    right: 0.7rem;
-    display: none;
-    animation: closeAppear 0.2s ease-in-out 0.2s;
-    animation-fill-mode: backwards;
   }
 }
 
@@ -102,8 +119,8 @@
 
 @for $i from 1 through 4 {
   .list-item:nth-child(#{$i}) {
-    animation: menu-items-in calc(#{$i}*150ms) ease-out;
+    animation: menu-items-in calc(#{$i}*100ms) ease-out;
     animation-fill-mode: backwards;
-    animation-delay: 00.2s;
+    animation-delay: 0.1s;
   }
 }
