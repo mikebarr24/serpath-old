@@ -1,10 +1,9 @@
 @import "../../config";
 
 #hero {
-    margin-top: $nav-height;
-    min-height: calc(100vh - $nav-height);
+    min-height: 100vh;
     background-image: url("../../media/images/hero-background.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     .hero-heading {
@@ -12,7 +11,7 @@
         color: $red;
         font-size: 5rem;
         display: block;
-        margin-top: $nav-height;
+        margin-top: 30%;
     }
     .hero-subheading {
         display: block;
