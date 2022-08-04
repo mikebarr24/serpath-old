@@ -1,10 +1,26 @@
 import React from "react";
 import "./Nav.scss";
-/* import { AiOutlineCloseCircle } from "react-icons/ai";
- */
+import { AiOutlineCloseCircle } from "react-icons/ai";
+
 function Nav() {
   const [nav, setNav] = React.useState(false);
-  console.log(nav);
+  const navToggle = ()=> {
+    setNav(!nav)
+  }
+  
+  let closeDisplay;
+  let burgerDisplay;
+  if (nav) {
+    closeDisplay = {
+      display: "block"
+    }
+    burgerDisplay = {
+      display: "none"
+    }
+  }
+
+
+
   return (
     <nav id="nav">
       <h1 className="nav-logo">SerPath</h1>
@@ -16,11 +32,12 @@ function Nav() {
           <li className="list-item">Contact</li>
         </ul>
       </div>
-      <div className="burger-btn" onClick={() => setNav(!nav)}>
+      <div className="burger-btn" style={burgerDisplay} onClick={navToggle}>
         <span></span>
         <span></span>
         <span></span>
       </div>
+    <AiOutlineCloseCircle className="nav-close-btn" style={closeDisplay}  onClick={navToggle} />
     </nav>
   );
 }
