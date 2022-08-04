@@ -12,14 +12,37 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-underline-offset: 0.3rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 .container {
   padding: 1rem;
+}
+
+.title-text {
+  font-size: 4rem;
+}
+
+.divider {
+  width: 100vw;
+  height: 0.3rem;
+  background-color: $yellow;
+  margin: 0.5rem 0;
+  margin-left: -1rem;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }

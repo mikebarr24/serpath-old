@@ -1,0 +1,16 @@
+@import "../../config";
+
+#portfolio {
+    min-height: calc(100vh - $nav-height);
+    background-color: $blue;
+    color: $red;
+    .portfolio-text {
+        color: $light-text
+    }
+    .project-carousel {
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+
+    }
+}
