@@ -1,16 +1,33 @@
 @import "../../config";
 
 #portfolio {
-    min-height: calc(100vh - $nav-height);
-    background-color: $blue;
-    color: $red;
-    .portfolio-text {
-        color: $light-text
-    }
-    .project-carousel {
-        display: flex;
-        overflow-x: scroll;
-        width: 100%;
+  min-height: calc(100vh - $nav-height);
+  background-color: $blue;
+  color: $red;
+  .portfolio-text {
+    color: $light-text;
+  }
+  .project-carousel {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+  }
+}
 
-    }
+@for $i from 1 through 3 {
+  .project:nth-child(#{$i}) {
+    animation: project-slide 0.3s ease-in-out calc(#{calc($i - 1)}* 100ms);
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes project-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

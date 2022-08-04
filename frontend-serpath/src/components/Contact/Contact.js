@@ -50,7 +50,7 @@ function Contact() {
           value={form.message}
           onChange={changeHandle}
         ></textarea>
-        <input type="submit" className="submit-button" />
+        <input type="submit" className="submit-button" value="Send" />
       </form>
     </section>
   );
