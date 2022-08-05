@@ -11,6 +11,7 @@
   top: 0;
   width: 100vw;
   box-shadow: 0 2px 5px rgba($color: white, $alpha: 0.2);
+  z-index: 1000;
   .nav-logo {
     font-size: 4rem;
   }
@@ -53,7 +54,7 @@
     color: $blue;
     font-size: 4rem;
     position: absolute;
-    top:1.5rem;
+    top: 1.5rem;
     left: 1.5rem;
     animation: closeAppear 0.2s ease-in-out 0.2s;
     animation-fill-mode: backwards;
@@ -117,10 +118,9 @@
 
 ////////// Loops ///////////
 
-
 @for $i from 1 through 4 {
   .list-item:nth-child(#{$i}) {
-    animation: menu-items-in calc(#{$i}*100ms) ease-out;
+    animation: menu-items-in calc(#{$i}* 100ms) ease-out;
     animation-fill-mode: backwards;
     animation-delay: 0.2s;
   }

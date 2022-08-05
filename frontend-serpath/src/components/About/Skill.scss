@@ -1,0 +1,21 @@
+@import "../../config";
+
+.skill {
+  color: $light-text;
+  display: flex;
+  flex-direction: column;
+  background-color: $blue;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  .icon-name {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .icon-wrapper {
+    margin: auto;
+    display: inline;
+    font-size: 5rem;
+  }
+}
