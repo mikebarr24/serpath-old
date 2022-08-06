@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-const db = [
-  {
-    project: "Serpath",
-    details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: null,
-    image: require("./site-images/serpath.png"),
-  },
-  {
-    project: "Serpath",
-    details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: "https://serpath.com",
-    image: require("./site-images/serpath.png"),
-  },
-  {
-    project: "Serpath",
-    details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: "https://serpath.com",
-    image: require("./site-images/serpath.png"),
-  },
-];
-
-export default db;
-=======
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
@@ -118,4 +91,3 @@ export const skillDb = [
     icon: <SiGit />,
   },
 ];
->>>>>>> b4254d11cb7af381b616ff9549e48e220a893417
