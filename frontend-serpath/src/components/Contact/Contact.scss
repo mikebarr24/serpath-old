@@ -1,34 +1,35 @@
 @import "../../config";
 
 #contact {
-    min-height: calc(100vh - $nav-height);
-    background-color: $blue;
-    .contact-text {
-        margin: 2rem 0;
-        color: $light-text;
+  min-height: calc(100vh - $nav-height);
+  background-color: $blue;
+  .contact-text {
+    margin: 2rem 0;
+    color: $light-text;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    .contact-text-input,
+    .contact-message {
+      background-color: rgb(219, 219, 219);
+      border: none;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
     }
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        .contact-text-input, .contact-message {
-            background-color: rgb(219, 219, 219);
-            border: none;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border-radius: 10px;
-            font-family: "Montserrat", sans-serif;
-            font-size: 1.6rem;
-        }
-        .contact-message {
-            height: 20rem;
-        }
-        .submit-button {
-            background-color: $red;
-            border: none;
-            padding: 1rem;
-            border-radius: 300px;
-            font-size: 2rem;
-            color: $light-text;
-        }
+    .contact-message {
+      height: 25rem;
     }
+    .submit-button {
+      background-color: $red;
+      border: none;
+      padding: 1rem;
+      border-radius: 300px;
+      font-size: 2rem;
+      color: $light-text;
+    }
+  }
 }

@@ -2,6 +2,7 @@
 
 #portfolio {
   min-height: calc(100vh - $nav-height);
+  scroll-margin: $nav-height;
   background-color: $blue;
   color: $red;
   .portfolio-text {
@@ -11,6 +12,7 @@
     display: flex;
     overflow-x: scroll;
     width: 100%;
+    margin-top: 1rem;
   }
 }
 

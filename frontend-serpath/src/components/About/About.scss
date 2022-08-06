@@ -2,6 +2,7 @@
 
 #about {
   min-height: calc(100vh - $nav-height);
+  scroll-margin: $nav-height;
   background-color: white;
   font-size: 1.6rem;
   color: $red;

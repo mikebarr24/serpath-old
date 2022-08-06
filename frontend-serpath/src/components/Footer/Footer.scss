@@ -1,0 +1,38 @@
+@import "../../config";
+
+#footer {
+  .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    background-image: url("../../media/images/hero-background.png");
+    background-size: cover;
+    z-index: -1;
+  }
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 2rem;
+  .logo {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $red;
+    text-align: center;
+  }
+  .footer-menu {
+    text-align: center;
+    font-size: 2rem;
+    .footer-item {
+      margin: 1.5rem 0;
+      list-style: none;
+    }
+  }
+  .copyright {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $red;
+  }
+}
