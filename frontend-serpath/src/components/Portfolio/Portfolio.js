@@ -12,6 +12,7 @@ function Portfolio() {
         className="project"
         image={project.image}
         details={project.details}
+        url={project.url}
       />
     );
   });
