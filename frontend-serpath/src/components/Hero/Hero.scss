@@ -11,16 +11,24 @@
   .hero-heading {
     text-align: center;
     color: $red;
-    font-size: 5rem;
+    font-size: 7rem;
     display: block;
     margin-top: 30%;
   }
   .hero-subheading {
     display: block;
     font-family: "Courier New", Courier, monospace;
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     text-indent: 0.3rem;
     font-weight: 100;
+  }
+}
+@keyframes enterUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
