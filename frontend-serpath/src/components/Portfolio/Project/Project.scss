@@ -22,14 +22,17 @@
     .project-detail-text {
       padding: 0.5rem 0;
       font-size: 1.6rem;
+      height: 12rem;
+      overflow-y: ellipsis;
     }
     .learn-more-wrapper {
       font-size: 2.3rem;
       margin: 1.5rem 0;
       display: flex;
+      align-items: center;
       font-weight: 600;
       .arrow {
-        margin: auto 0.7rem;
+        margin: 0 0.7rem;
         font-size: 3rem;
       }
     }

@@ -1,21 +1,26 @@
 import React from "react";
 import "./Project.scss";
 import Button from "./Button";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 
 function Project(props) {
   return (
-    <div className={`project-wrapper ${props.className}`}>
+    <div
+      className={`project-wrapper ${props.className}`}
+      onClick={props.onClick}
+    >
       <div className="image-wrapper">
         <img src={props.image} alt="Project" className="project-image" />
       </div>
       <div className="project-details-wrapper">
         <p className="project-detail-text">{props.details}</p>
         <div className="learn-more-wrapper">
-          <a href="/#" className="learn-more-text">
+          <p
+            onClick={() => props.learnMore(props.id)}
+            className="learn-more-text"
+          >
             Learn More
-          </a>
+          </p>
           <BsArrowRight className="arrow" />
         </div>
         {props.url && (

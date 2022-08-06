@@ -1,3 +1,4 @@
+import React from "react";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
@@ -15,20 +16,32 @@ import {
 
 export const projectDb = [
   {
+    id: 1,
     project: "Serpath",
     details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
+      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it!",
     url: "",
     image: require("./site-images/serpath.png"),
+    tech: [
+      <FaReact />,
+      <SiJavascript />,
+      <SiHtml5 />,
+      <SiSass />,
+      <SiDocker />,
+      <SiGit />,
+    ],
+    challenges: "The main challenge with this site was the",
   },
   {
-    project: "Serpath",
+    id: 2,
+    project: "MisPartituras",
     details:
       "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
     url: "https://serpath.com",
     image: require("./site-images/serpath.png"),
   },
   {
+    id: 3,
     project: "Serpath",
     details:
       "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
