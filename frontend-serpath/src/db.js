@@ -18,7 +18,7 @@ export const projectDb = [
     project: "Serpath",
     details:
       "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: "https://serpath.com",
+    url: "",
     image: require("./site-images/serpath.png"),
   },
   {

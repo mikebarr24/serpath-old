@@ -1,6 +1,7 @@
 import "./Footer.scss";
 import React from "react";
 import { HashLink } from "react-router-hash-link";
+import Social from "../utility/Social";
 
 function Footer() {
   const date = new Date().getFullYear();
@@ -26,6 +27,7 @@ function Footer() {
           </HashLink>
         </ul>
       </div>
+      <Social className="social-links" />
       <p className="copyright">All rights reserved Serpath {date}</p>
     </footer>
   );

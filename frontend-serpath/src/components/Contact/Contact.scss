@@ -2,6 +2,7 @@
 
 #contact {
   min-height: calc(100vh - $nav-height);
+  scroll-margin: $nav-height;
   background-color: $blue;
   .contact-text {
     margin: 2rem 0;

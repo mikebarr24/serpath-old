@@ -35,4 +35,14 @@
     text-align: center;
     color: $red;
   }
+  .social-links {
+    bottom: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 5rem;
+    color: $blue;
+    * {
+      margin: 0 0.7rem;
+    }
+  }
 }

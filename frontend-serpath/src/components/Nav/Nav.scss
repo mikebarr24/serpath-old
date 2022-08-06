@@ -51,14 +51,14 @@
     animation-fill-mode: backwards;
   }
   .social-icons {
-    color: $blue;
+    color: $red;
     font-size: 4rem;
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
     animation: closeAppear 0.2s ease-in-out 0.2s;
     animation-fill-mode: backwards;
-    .icon {
+    * {
       margin-right: 1rem;
     }
   }
