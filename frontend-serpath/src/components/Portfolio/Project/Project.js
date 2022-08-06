@@ -23,11 +23,7 @@ function Project(props) {
           </p>
           <BsArrowRight className="arrow" />
         </div>
-        {props.url && (
-          <a href={props.url}>
-            <Button />
-          </a>
-        )}
+        <Button url={props.url} />
       </div>
     </div>
   );
