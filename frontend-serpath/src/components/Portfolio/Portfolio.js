@@ -28,6 +28,7 @@ function Portfolio() {
         id={project.id}
         learnMore={learnMore}
         github={project.github}
+        tech={project.tech}
       />
     );
   });

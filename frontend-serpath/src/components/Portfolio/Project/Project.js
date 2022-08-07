@@ -12,6 +12,16 @@ function Project(props) {
     >
       <div className="image-wrapper">
         <img src={props.image} alt="Project" className="project-image" />
+
+        {props.tech && (
+          <div className="icons-wrapper">
+            {props.tech.map((icon, index) => (
+              <span key={index} className="icon">
+                {icon}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
       <div className="project-details-wrapper">
         <p className="project-detail-text">{props.details}</p>
