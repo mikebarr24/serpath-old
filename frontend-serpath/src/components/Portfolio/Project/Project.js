@@ -2,7 +2,6 @@ import React from "react";
 import "./Project.scss";
 import Button from "./Button";
 import { BsArrowRight } from "react-icons/bs";
-import { SiGithub } from "react-icons/si";
 
 function Project(props) {
   return (

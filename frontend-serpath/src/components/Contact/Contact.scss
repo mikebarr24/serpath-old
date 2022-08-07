@@ -11,6 +11,7 @@
   .contact-form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     .contact-text-input,
     .contact-message {
       background-color: rgb(219, 219, 219);
@@ -31,6 +32,9 @@
       border-radius: 300px;
       font-size: 2rem;
       color: $light-text;
+    }
+    @include tablet {
+      width: 80%;
     }
   }
 }

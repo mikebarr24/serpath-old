@@ -5,9 +5,21 @@ $purple: #9daaf2;
 $red: #ff6a3d;
 $yellow: #f4db7d;
 $light-text: white;
-$nav-height: 6.8rem;
+$nav-height: 6rem;
+
+/// Breakpoints ///
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
 html {
   font-size: 10px;
+  @include tablet {
+    font-size: 0.9rem;
+  }
 }
 
 body {
