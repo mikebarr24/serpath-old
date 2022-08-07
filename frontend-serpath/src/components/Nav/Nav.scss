@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   position: fixed;
+  justify-content: space-between;
   top: 0;
   width: 100vw;
   box-shadow: 0 2px 5px rgba($color: white, $alpha: 0.2);
@@ -30,15 +31,32 @@
       margin: auto;
       list-style: none;
       transition: all 2s ease-in-out;
+      @include laptop {
+        display: flex;
+        font-size: 2rem;
+      }
       .list-item {
-        margin: 2rem 0;
+        margin: 2rem;
         font-weight: 600;
+        @include laptop {
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
     }
     &.open {
       display: flex;
       animation: menu-open 0.2s ease-in-out;
       animation-fill-mode: backwards;
+      @include laptop {
+        animation: none;
+      }
+    }
+    @include laptop {
+      display: flex;
+      background-color: transparent;
+      position: static;
     }
   }
   .nav-close-btn {
@@ -49,6 +67,9 @@
     right: 0.7rem;
     animation: close-button 0.2s ease-in-out 0.4s;
     animation-fill-mode: backwards;
+    @include laptop {
+      display: none;
+    }
   }
   .social-icons {
     color: $red;
@@ -60,6 +81,9 @@
     animation-fill-mode: backwards;
     * {
       margin-right: 1rem;
+    }
+    @include laptop {
+      display: none;
     }
   }
   .burger-btn {
@@ -80,6 +104,9 @@
       &:last-of-type {
         width: 70%;
       }
+    }
+    @include laptop {
+      display: none;
     }
   }
 }
