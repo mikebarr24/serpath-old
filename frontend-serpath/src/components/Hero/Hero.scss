@@ -1,5 +1,10 @@
 @import "../../config";
 
+@mixin titleAnimation($name, $time, $delay) {
+  animation: $name $time ease-in $delay;
+  animation-fill-mode: backwards;
+}
+
 #hero {
   margin-top: $nav-height;
   scroll-margin: $nav-height;
@@ -8,27 +13,32 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
   .hero-heading {
-    text-align: center;
-    color: $red;
-    font-size: 7rem;
+    @include titleAnimation(enterUp, 0.4s, 0.1s);
     display: block;
     margin-top: 30%;
+    color: $red;
+    font-size: 7rem;
   }
   .hero-subheading {
     display: block;
     font-family: "Courier New", Courier, monospace;
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 0.2rem;
     text-indent: 0.3rem;
     font-weight: 100;
+    color: $blue;
   }
 }
+
 @keyframes enterUp {
   0% {
     opacity: 0;
+    transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
