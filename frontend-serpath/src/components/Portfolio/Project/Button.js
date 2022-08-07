@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.scss";
+import { SiGithub } from "react-icons/si";
 
 function Button(props) {
   const [active, setActive] = React.useState(false);
@@ -17,7 +18,14 @@ function Button(props) {
 
   return (
     <a href={props.url} style={styles}>
-      <button className="project-btn">Live Site</button>
+      <button className="project-btn">
+        {props.name === "Github" && (
+          <span className="git-icon">
+            <SiGithub />
+          </span>
+        )}
+        {props.name}
+      </button>
     </a>
   );
 }

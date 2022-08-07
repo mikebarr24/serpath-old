@@ -31,6 +31,7 @@ export const projectDb = [
       <SiGit />,
     ],
     challenges: "The main challenge with this site was the",
+    github: "https://github.com/mikebarr24/serpath",
   },
   {
     id: 2,

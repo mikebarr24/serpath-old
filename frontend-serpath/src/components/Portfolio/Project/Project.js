@@ -2,6 +2,7 @@ import React from "react";
 import "./Project.scss";
 import Button from "./Button";
 import { BsArrowRight } from "react-icons/bs";
+import { SiGithub } from "react-icons/si";
 
 function Project(props) {
   return (
@@ -23,7 +24,8 @@ function Project(props) {
           </p>
           <BsArrowRight className="arrow" />
         </div>
-        <Button url={props.url} />
+        <Button url={props.url} name="Live Site" />
+        <Button url={props.github} name="Github" />
       </div>
     </div>
   );

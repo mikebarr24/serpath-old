@@ -27,6 +27,7 @@ function Portfolio() {
         url={project.url}
         id={project.id}
         learnMore={learnMore}
+        github={project.github}
       />
     );
   });

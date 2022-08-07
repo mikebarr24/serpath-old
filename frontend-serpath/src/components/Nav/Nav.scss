@@ -47,7 +47,7 @@
     position: absolute;
     top: 1rem;
     right: 0.7rem;
-    animation: closeAppear 0.2s ease-in-out 0.2s;
+    animation: close-button 0.2s ease-in-out 0.4s;
     animation-fill-mode: backwards;
   }
   .social-icons {
@@ -113,6 +113,15 @@
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes close-button {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
