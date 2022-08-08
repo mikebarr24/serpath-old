@@ -11,7 +11,6 @@ function Project(props) {
     >
       <div className="image-wrapper">
         <img src={props.image} alt="Project" className="project-image" />
-
         {props.tech && (
           <div className="icons-wrapper">
             {props.tech.map((icon, index) => (
@@ -33,8 +32,8 @@ function Project(props) {
           </p>
           <BsArrowRight className="arrow" />
         </div>
-        <Button url={props.url} name="Live Site" />
-        <Button url={props.github} name="Github" />
+        <Button className="project-btn" url={props.url} name="Live Site" />
+        <Button url={props.github} className="project-btn" name="Github" />
       </div>
     </div>
   );

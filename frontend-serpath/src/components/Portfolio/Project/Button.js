@@ -18,7 +18,7 @@ function Button(props) {
 
   return (
     <a href={props.url} style={styles}>
-      <button className="project-btn">
+      <button className={props.className}>
         {props.name === "Github" && (
           <span className="git-icon">
             <SiGithub />
