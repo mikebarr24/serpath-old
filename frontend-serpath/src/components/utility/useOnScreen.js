@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function useOnScreen(ref) {
-  const [isIntersecting, setIsIntersecting] = React.useState(false);
+const useOnScreen = (ref) => {
+  const [intersecting, setIntersecting] = React.useState(false);
+
   const observer = new IntersectionObserver(([entry]) =>
-    setIsIntersecting(entry.isIntersecting)
+    setIntersecting(entry.isIntersecting)
   );
 
   React.useEffect(() => {
@@ -11,6 +12,9 @@ export default function useOnScreen(ref) {
     return () => {
       observer.disconnect();
     };
-  });
-  return isIntersecting;
-}
+  }, []);
+
+  return intersecting;
+};
+
+export default useOnScreen;

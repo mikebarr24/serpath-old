@@ -1,6 +1,7 @@
 import React from "react";
 import "./Button.scss";
 import { SiGithub } from "react-icons/si";
+import { BsLightningChargeFill } from "react-icons/bs";
 
 function Button(props) {
   const [active, setActive] = React.useState(false);
@@ -17,8 +18,8 @@ function Button(props) {
   }
 
   return (
-    <a href={props.url} style={styles}>
-      <button className="project-btn">
+    <a href={props.url} style={styles} target="_blank">
+      <button className={props.className}>
         {props.name === "Github" && (
           <span className="git-icon">
             <SiGithub />

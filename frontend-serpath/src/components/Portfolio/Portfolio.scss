@@ -5,22 +5,15 @@
   scroll-margin: $nav-height;
   background-color: $blue;
   color: $red;
+  padding-bottom: 2rem;
   .portfolio-text {
     color: $light-text;
   }
-  .project-carousel {
-    display: flex;
-    overflow-x: scroll;
-    width: 100%;
-    margin-top: 1rem;
-    min-height: 40rem;
-  }
-}
-
-@for $i from 1 through 3 {
-  .project:nth-child(#{$i}) {
-    animation: project-slide 0.3s ease-in-out calc(#{calc($i - 1)}* 100ms);
-    animation-fill-mode: backwards;
+  .projects-grid {
+    display: grid;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 

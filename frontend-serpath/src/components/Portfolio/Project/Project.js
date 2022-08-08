@@ -1,40 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Project.scss";
-import Button from "./Button";
-import { BsArrowRight } from "react-icons/bs";
+import useOnScreen from "../../utility/useOnScreen";
 
 function Project(props) {
+  const ref = useRef();
+  const isVisible = useOnScreen(ref);
   return (
-    <div
-      className={`project-wrapper ${props.className}`}
-      onClick={props.onClick}
-    >
-      <div className="image-wrapper">
-        <img src={props.image} alt="Project" className="project-image" />
-
-        {props.tech && (
-          <div className="icons-wrapper">
-            {props.tech.map((icon, index) => (
-              <span key={index} className="icon">
-                {icon}
-              </span>
-            ))}
-          </div>
-        )}
-      </div>
-      <div className="project-details-wrapper">
-        <p className="project-detail-text">{props.details}</p>
-        <div className="learn-more-wrapper">
-          <p
-            onClick={() => props.learnMore(props.id)}
-            className="learn-more-text"
-          >
-            Learn More
-          </p>
-          <BsArrowRight className="arrow" />
+    <div className="project-wrapper" onClick={props.onClick}>
+      <img src={props.image} alt="Project" className="project-image" />
+      {props.tech && (
+        <div className="icons-wrapper">
+          {props.tech.map((icon, index) => (
+            <span key={index} className="icon">
+              {icon}
+            </span>
+          ))}
         </div>
-        <Button url={props.url} name="Live Site" />
-        <Button url={props.github} name="Github" />
+      )}
+      <div ref={ref} className="btn-wrapper">
+        {isVisible && (
+          <button
+            className="more-button"
+            onClick={() => props.learnMore(props.id)}
+          >
+            More Info
+          </button>
+        )}
       </div>
     </div>
   );

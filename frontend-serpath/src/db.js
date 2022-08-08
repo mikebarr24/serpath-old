@@ -16,10 +16,48 @@ import {
 
 export const projectDb = [
   {
+    id: 3,
+    project: "ClimbingNI",
+    details:
+      "Who doesn't love a good climbing app! I put this together for the climbing comunity of Northern Ireland as the climbing over here is world renound. ",
+    image: require("./site-images/climbingni.png"),
+    tech: [
+      <FaReact />,
+      <FaNodeJs />,
+      <SiMongodb />,
+      <SiExpress />,
+      <SiHtml5 />,
+      <SiSass />,
+      <SiDocker />,
+      <SiGit />,
+    ],
+    challenges: [
+      "Storage of sufficiently hi-res images at an efficient file size.",
+      "Gathering enough data to render the app useful.",
+    ],
+    github: "https://github.com/mikebarr24/climbing",
+  },
+  {
     id: 1,
+    project: "MisPartituras",
+    details:
+      "A Django porject for music teachers to assign music to their students. ",
+    image: require("./site-images/mispartituras.png"),
+    tech: [
+      <SiDjango />,
+      <SiPython />,
+      <SiJavascript />,
+      <SiHtml5 />,
+      <SiSass />,
+      <SiDocker />,
+      <SiGit />,
+    ],
+  },
+  {
+    id: 2,
     project: "Serpath",
     details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it!",
+      "This is my own website (this site). It's been great fun to make so hopefully you'll spend a bit of time clicking about it! I've done everything on this site from design to deployment and I hope it will be a springboard to display and share many more projects with you so watch this space! :) ",
     url: "",
     image: require("./site-images/serpath.png"),
     tech: [
@@ -30,24 +68,10 @@ export const projectDb = [
       <SiDocker />,
       <SiGit />,
     ],
-    challenges: "The main challenge with this site was the",
+    challenges: [
+      "Displaying projects clearly in a way that is intuitive for the visitor to see.",
+    ],
     github: "https://github.com/mikebarr24/serpath",
-  },
-  {
-    id: 2,
-    project: "MisPartituras",
-    details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: "https://serpath.com",
-    image: require("./site-images/serpath.png"),
-  },
-  {
-    id: 3,
-    project: "Serpath",
-    details:
-      "This is my own website(this site). It's been great fun to makehopefully you'll spend a bit of time clicking about it! ",
-    url: "https://serpath.com",
-    image: require("./site-images/serpath.png"),
   },
 ];
 
