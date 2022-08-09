@@ -7,6 +7,7 @@ services:
       - 8080:8080
     volumes: 
       - ./api:/app
+      - /api/node_modules
   frontend_serpath:
     build: ./frontend-serpath
     container_name: frontend_serpath

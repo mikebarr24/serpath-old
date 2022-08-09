@@ -1,8 +1,8 @@
 FROM node:16-alpine3.16
-RUN npm install -g nodemon
 WORKDIR /app
-COPY package*.json ./
+COPY package*.json .
+RUN npm install -g nodemon
 RUN npm install
 COPY . .
 EXPOSE 8080
-CMD ["nodemon"]
+CMD ["nodemon", "index.js"]
