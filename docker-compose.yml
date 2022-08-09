@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  api_serpath:
+    build: ./api
+    container_name: api_climbing
+    ports:
+      - 8080:8080
+    volumes: 
+      - ./api:/app
+  frontend_serpath:
+    build: ./frontend-serpath
+    container_name: frontend_serpath
+    ports: 
+      - 3000:3000
+    volumes:
+      - ./frontend-serpath:/app
+    depends_on:
+      - api_serpath
