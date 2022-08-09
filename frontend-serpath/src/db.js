@@ -41,7 +41,7 @@ export const projectDb = [
     id: 1,
     project: "MisPartituras",
     details:
-      "A Django porject for music teachers to assign music to their students. ",
+      "A Django project for music teachers to assign music to their students. This is a fun and creative way to allow music teachers and pupils to interact digitally and for the teac",
     image: require("./site-images/mispartituras.png"),
     tech: [
       <SiDjango />,
@@ -52,13 +52,18 @@ export const projectDb = [
       <SiDocker />,
       <SiGit />,
     ],
+    github: "https://github.com/mikebarr24/mistartituras-django",
+    challenges: [
+      "Show results from a particular search quicky. Database information should load quickly.",
+      "Serve the information about the piece of music to the client in an efficient way.",
+    ],
   },
   {
     id: 2,
     project: "Serpath",
     details:
       "This is my own website (this site). It's been great fun to make so hopefully you'll spend a bit of time clicking about it! I've done everything on this site from design to deployment and I hope it will be a springboard to display and share many more projects with you so watch this space! :) ",
-    url: "",
+    url: "https://serpath.com",
     image: require("./site-images/serpath.png"),
     tech: [
       <FaReact />,
