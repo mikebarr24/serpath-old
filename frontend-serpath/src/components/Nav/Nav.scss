@@ -13,10 +13,10 @@
   width: 100vw;
   box-shadow: 0 2px 5px rgba($color: white, $alpha: 0.2);
   z-index: 1000;
-  .nav-logo {
+  .nav__logo {
     font-size: 4rem;
   }
-  .nav-items {
+  .nav__items {
     position: absolute;
     height: 100vh;
     top: 0;
@@ -35,7 +35,7 @@
         display: flex;
         font-size: 2rem;
       }
-      .list-item {
+      .nav__list-item {
         margin: 2rem;
         font-weight: 600;
         @include laptop {
@@ -59,7 +59,7 @@
       position: static;
     }
   }
-  .nav-close-btn {
+  .nav__close-btn {
     color: $blue;
     font-size: 5rem;
     position: absolute;
@@ -86,7 +86,7 @@
       display: none;
     }
   }
-  .burger-btn {
+  .nav__burger-btn {
     position: absolute;
     top: 1.7rem;
     right: 1.5rem;

@@ -19,28 +19,32 @@ function LearnMore(props) {
 
   return ReactDOM.createPortal(
     <>
-      <div className="overlay" style={OVERLAY_STYLES} onClick={props.close} />
-      <div className="modal-container">
+      <div
+        className="modal__overlay"
+        style={OVERLAY_STYLES}
+        onClick={props.close}
+      />
+      <div className="modal__container">
         <div className="modal">
-          <div className="modal-title-bar">
-            <h2 className="project-title">{project.project}</h2>
+          <div className="modal__title-bar">
+            <h2 className="modal__project-title">{project.project}</h2>
             <AiOutlineCloseCircle
               onClick={props.close}
-              className="modal-close"
+              className="modal__close-btn"
             />
           </div>
-          <img className="project-image" src={project.image} alt="" />
+          <img className="modal__image" src={project.image} alt="" />
           <br />
-          <div className="button-wrapper">
-            <Button name="Github" className="modal-btn" url={project.github} />
-            <Button name="Live Site" className="modal-btn" url={project.url} />
+          <div className="modal__button-wrapper">
+            <Button name="Github" className="modal__btn" url={project.github} />
+            <Button name="Live Site" className="modal__btn" url={project.url} />
           </div>
           {project.tech && (
-            <div className="tech-used-wrapper">
+            <div className="modal__tech-used-wrapper">
               <h3 className="modal-heading">Technology Used</h3>
-              <div className="tech-icon-wrapper">
+              <div className="modal__tech-icon-wrapper">
                 {project.tech.map((item, index) => (
-                  <span className="tech-icon" key={index}>
+                  <span className="modal__tech-icon" key={index}>
                     {item}
                   </span>
                 ))}
@@ -49,7 +53,7 @@ function LearnMore(props) {
           )}
           <br />
           <h3 className="modal-heading">About</h3>
-          <p className="modal-text">{project.details}</p>
+          <p className="modal__text">{project.details}</p>
           <br />
 
           <h3 className="modal-heading">Challenges</h3>
@@ -57,7 +61,7 @@ function LearnMore(props) {
             <ul>
               {project.challenges.map((challenge, index) => {
                 return (
-                  <li key={index} className="challenge-item">
+                  <li key={index} className="modal__challenge-item">
                     {challenge}
                   </li>
                 );

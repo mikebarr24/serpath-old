@@ -1,7 +1,7 @@
 @import "../../config";
 
 #footer {
-  .mask {
+  .footer__mask {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -16,21 +16,21 @@
   position: relative;
   flex-direction: column;
   padding: 2rem;
-  .logo {
+  .footer__logo {
     font-size: 4rem;
     font-weight: 600;
     color: $red;
     text-align: center;
   }
-  .footer-menu {
+  .footer__menu {
     text-align: center;
     font-size: 2rem;
-    .footer-item {
+    .footer__item {
       margin: 1.5rem 0;
       list-style: none;
     }
   }
-  .copyright {
+  .footer__copyright {
     font-size: 1.5rem;
     text-align: center;
     color: $red;

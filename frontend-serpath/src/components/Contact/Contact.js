@@ -22,15 +22,15 @@ function Contact() {
   return (
     <section id="contact" className="container">
       <h1 className="title-text">Contact</h1>
-      <p className="contact-text">
+      <p className="contact__text">
         If you've got any questions, please don't hesitate to get in touch with
         me using the form below.
       </p>
-      <form className="contact-form" onSubmit={submitHandle}>
+      <form className="contact__form" onSubmit={submitHandle}>
         <input
           type="text"
           name="name"
-          className="contact-text-input"
+          className="contact__text-input"
           placeholder="Name"
           value={form.name}
           onChange={changeHandle}
@@ -38,19 +38,19 @@ function Contact() {
         <input
           type="email"
           name="email"
-          className="contact-text-input"
+          className="contact__text-input"
           placeholder="Email"
           value={form.email}
           onChange={changeHandle}
         />
         <textarea
           name="message"
-          className="contact-message"
+          className="contact__message"
           placeholder="Message"
           value={form.message}
           onChange={changeHandle}
         ></textarea>
-        <input type="submit" className="submit-button" value="Send" />
+        <input type="submit" className="contact__submit-button" value="Send" />
       </form>
     </section>
   );

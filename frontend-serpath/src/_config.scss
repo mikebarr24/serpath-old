@@ -22,7 +22,7 @@ $nav-height: 6rem;
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   @include tablet {
     font-size: 0.9rem;
   }
@@ -32,12 +32,13 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 * {
   padding: 0;
+  box-sizing: inherit;
   margin: 0;
-  box-sizing: border-box;
   text-underline-offset: 0.3rem;
 }
 

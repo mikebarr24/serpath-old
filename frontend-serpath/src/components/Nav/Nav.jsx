@@ -12,26 +12,26 @@ function Nav() {
 
   return (
     <nav id="nav">
-      <h1 className="nav-logo">SerPath</h1>
-      <div className={`nav-items${nav === true ? " open" : ""}`}>
+      <h1 className="nav__logo">SerPath</h1>
+      <div className={`nav__items${nav === true ? " open" : ""}`}>
         <ul>
           <HashLink smooth to="#hero" onClick={navToggle}>
-            <li className="list-item">Home</li>
+            <li className="nav__list-item">Home</li>
           </HashLink>
           <HashLink smooth to="#portfolio" onClick={navToggle}>
-            <li className="list-item">My Work</li>
+            <li className="nav__list-item">My Work</li>
           </HashLink>
           <HashLink smooth to="#about" onClick={navToggle}>
-            <li className="list-item">About</li>
+            <li className="nav__list-item">About</li>
           </HashLink>
           <HashLink smooth to="#contact" onClick={navToggle}>
-            <li className="list-item">Contact</li>
+            <li className="nav__list-item">Contact</li>
           </HashLink>
         </ul>
         <Social className="social-icons" />
-        <AiOutlineCloseCircle className="nav-close-btn" onClick={navToggle} />
+        <AiOutlineCloseCircle className="nav__close-btn" onClick={navToggle} />
       </div>
-      <div className="burger-btn" onClick={navToggle}>
+      <div className="nav__burger-btn" onClick={navToggle}>
         <span></span>
         <span></span>
         <span></span>

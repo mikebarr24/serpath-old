@@ -7,28 +7,28 @@ function Footer() {
   const date = new Date().getFullYear();
   return (
     <footer id="footer">
-      <div className="mask"></div>
+      <div className="footer__mask"></div>
       <HashLink smooth to="#hero">
-        <div className="logo">Serpath</div>
+        <div className="footer__logo">Serpath</div>
       </HashLink>
-      <div className="footer-menu">
+      <div className="footer__menu">
         <ul>
           <HashLink smooth to="#hero">
-            <li className="footer-item">Home</li>
+            <li className="footer__item">Home</li>
           </HashLink>
           <HashLink smooth to="#portfolio">
-            <li className="footer-item">My Work</li>
+            <li className="footer__item">My Work</li>
           </HashLink>
           <HashLink smooth to="#about">
-            <li className="footer-item">About</li>
+            <li className="footer__item">About</li>
           </HashLink>
           <HashLink smooth to="#contact">
-            <li className="footer-item">Contact</li>
+            <li className="footer__item">Contact</li>
           </HashLink>
         </ul>
       </div>
       <Social className="social-links" />
-      <p className="copyright">All rights reserved Serpath {date}</p>
+      <p className="footer__copyright">All rights reserved Serpath {date}</p>
     </footer>
   );
 }

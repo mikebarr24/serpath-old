@@ -1,6 +1,6 @@
 @import "../../../config";
 
-.modal-container {
+.modal__container {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -23,7 +23,7 @@
   color: $blue;
   padding: 0 1rem;
   padding-bottom: 2rem;
-  .modal-title-bar {
+  .modal__title-bar {
     border-radius: 1rem 1rem 0 0;
     position: absolute;
     left: 0;
@@ -34,30 +34,30 @@
     padding: 0 0.5rem;
     display: flex;
     z-index: 1000;
-    .modal-close {
+    .modal__close-btn {
       position: absolute;
       top: 0.3rem;
       right: 0.5rem;
       font-size: 4rem;
       color: $red;
     }
-    .project-title {
+    .modal__project-title {
       margin: auto 0;
       font-size: 3rem;
       color: $red;
     }
   }
-  .project-image {
+  .modal__image {
     width: 100%;
     height: auto;
     border: 2px solid $red;
     margin-top: calc($title-height + 1rem);
   }
-  .button-wrapper {
+  .modal__button-wrapper {
     display: flex;
     justify-content: space-around;
     margin: 1rem 0;
-    .modal-btn {
+    .modal__btn {
       background-color: $red;
       width: 12rem;
       height: 4rem;
@@ -77,19 +77,19 @@
       }
     }
   }
-  .tech-used-wrapper {
+  .modal__tech-used-wrapper {
     width: 100%;
     justify-content: space-around;
-    .tech-icon-wrapper {
+    .modal__tech-icon-wrapper {
       display: flex;
       justify-content: space-around;
-      .tech-icon {
+      .modal__tech-icon {
         font-size: 3rem;
         margin-right: 1rem;
       }
     }
   }
-  .challenge-item {
+  .modal__challenge-item {
     margin-left: 2rem;
     font-size: 1.7rem;
   }

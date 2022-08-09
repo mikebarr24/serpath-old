@@ -14,14 +14,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  .hero-heading {
+  .hero--heading {
     @include titleAnimation(enterUp, 0.4s, 0.1s);
     display: block;
     margin-top: 30%;
     color: $red;
     font-size: 7rem;
   }
-  .hero-subheading {
+  .hero--subheading {
     display: block;
     font-family: "Courier New", Courier, monospace;
     font-size: 2.8rem;

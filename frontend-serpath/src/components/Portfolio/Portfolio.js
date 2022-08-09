@@ -35,11 +35,11 @@ function Portfolio() {
   return (
     <section id="portfolio" className="container">
       <h1 className="title-text">My Work</h1>
-      <p className="portfolio-text">
+      <p className="portfolio__text">
         Take a look at some of my past &amp; present projects.
       </p>
       <br />
-      <div className="projects-grid">{projects}</div>
+      <div className="projects__grid">{projects}</div>
       {open && <LearnMore id={open} close={() => setOpen(false)} />}
     </section>
   );

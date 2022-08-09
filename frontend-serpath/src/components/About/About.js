@@ -11,16 +11,16 @@ function About() {
   });
   return (
     <section id="about" className="container">
-      <h1 className="title-text about-me">About Me</h1>
+      <h1 className="title-text">About Me</h1>
       <div className="divider"></div>
-      <p className="about-text">
+      <p className="about__text">
         I'm Michael and I'm a web developer. I've got a long history with
         technology and I'd love for you to have a look about my site to see what
         I've been working on.
       </p>
-      <img src={me} className="me" alt="portrait" />
-      <div className="skills-wrapper">{skills}</div>
-      <a href={cv} download className="download-cv">
+      <img src={me} className="about__me" alt="portrait" />
+      <div className="about__skills-wrapper">{skills}</div>
+      <a href={cv} download className="about__download-cv">
         Download CV
       </a>
     </section>

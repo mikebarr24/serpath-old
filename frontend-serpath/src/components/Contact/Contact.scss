@@ -4,16 +4,16 @@
   min-height: calc(100vh - $nav-height);
   scroll-margin: $nav-height;
   background-color: $blue;
-  .contact-text {
+  .contact__text {
     margin: 2rem 0;
     color: $light-text;
   }
-  .contact-form {
+  .contact__form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    .contact-text-input,
-    .contact-message {
+    .contact__text-input,
+    .contact__message {
       background-color: rgb(219, 219, 219);
       border: none;
       margin-bottom: 2rem;
@@ -22,10 +22,10 @@
       font-family: "Montserrat", sans-serif;
       font-size: 1.6rem;
     }
-    .contact-message {
+    .contact__message {
       height: 25rem;
     }
-    .submit-button {
+    .contact__submit-button {
       background-color: $red;
       border: none;
       padding: 1rem;

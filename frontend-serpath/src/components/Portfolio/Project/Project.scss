@@ -1,6 +1,6 @@
 @import "../../../config";
 
-.project-wrapper {
+.project__wrapper {
   min-width: 22rem;
   background-color: rgba($color: #ffffff, $alpha: 0.1);
   border-radius: 10px;
@@ -15,11 +15,11 @@
   @include tablet {
     margin: 1rem;
   }
-  .project-image {
+  .project__image {
     display: block;
     height: 100%;
   }
-  .icons-wrapper {
+  .project__icons-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,7 +29,7 @@
     background-color: $red;
     padding: 0.5rem 0;
     border-top: 4px solid $yellow;
-    .icon {
+    .project__icon {
       font-size: 3rem;
       color: $blue;
       * {
@@ -38,12 +38,12 @@
       }
     }
   }
-  .btn-wrapper {
+  .project__btn-wrapper {
     position: absolute;
     top: 2rem;
     right: 1rem;
   }
-  .more-button {
+  .project__more-button {
     background-color: $red;
     border: none;
     border-radius: 100px;
