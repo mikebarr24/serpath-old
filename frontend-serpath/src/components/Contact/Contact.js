@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.scss";
+import axios from "axios";
 
 function Contact() {
   const formInit = {
@@ -15,9 +16,13 @@ function Contact() {
       [event.target.name]: event.target.value,
     }));
   };
-  const submitHandle = (event) => {
+  const submitHandle = async (event) => {
     event.preventDefault();
-    console.log(form);
+    try {
+      const res = await axios.post("http://localhost:8080/api/mail", form);
+    } catch (error) {
+      console.error(error);
+    }
   };
   return (
     <section id="contact" className="container">

@@ -2,6 +2,7 @@ const router = require("express").Router();
 const nodemailer = require("nodemailer");
 const Joi = require("joi");
 const validate = require("../middleware/validate");
+
 require("dotenv").config();
 
 const validateEmail = (email) => {
@@ -13,7 +14,11 @@ const validateEmail = (email) => {
   return schema.validate(email);
 };
 
-router.post("/", validate(validateEmail), (req, res) => {
+router.get("/", (req, res) => {
+  res.send("this is a test work!!!!");
+});
+
+router.post("/", [validate(validateEmail)], (req, res) => {
   const sendMail = async () => {
     const transporter = nodemailer.createTransport({
       service: "Hotmail",
