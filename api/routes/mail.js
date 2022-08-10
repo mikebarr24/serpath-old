@@ -15,7 +15,7 @@ const validateEmail = (email) => {
 };
 
 router.get("/", (req, res) => {
-  res.send("this is a test work!!!!");
+  res.send("this is a test work");
 });
 
 router.post("/", [validate(validateEmail)], (req, res) => {

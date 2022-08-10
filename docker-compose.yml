@@ -18,3 +18,4 @@ services:
       - /frontend-serpath/node_modules
     depends_on:
       - api_serpath
+  
